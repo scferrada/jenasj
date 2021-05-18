@@ -1,0 +1,18 @@
+PREFIX wdt:<http://www.wikidata.org/prop/direct/>
+SELECT ?id1 ?a1 ?l1 ?k1 ?x1 ?o1 WHERE {
+	?id1 wdt:P2146 ?a1 ;
+		wdt:P1457 ?l1 ;
+		wdt:P4501 ?k1 ;
+		wdt:P2243 ?x1 ;
+		wdt:P2325 ?o1 .
+}
+SIMILARITY JOIN ON (?a1 ?l1 ?k1 ?x1 ?o1) (?a2 ?l2 ?k2 ?x2 ?o2)
+WITH DISTANCE manhattan as ?d
+TOP 1
+SELECT ?id2 ?a2 ?l2 ?k2 ?x2 ?o2 WHERE {
+	?id2 wdt:P2146 ?a2 ;
+		wdt:P1457 ?l2 ;
+		wdt:P4501 ?k2 ;
+		wdt:P2243 ?x2 ;
+		wdt:P2325 ?o2 .
+}
