@@ -83,7 +83,7 @@
 
     <ver.dexxcollection>0.7</ver.dexxcollection>
 
-    <ver.httpclient>4.5.10</ver.httpclient>
+    <ver.httpclient>4.5.13</ver.httpclient>
     <ver.httpcore>4.4.9</ver.httpcore>
     <!-- Normally, these are the same as the above
          In the case of 4.2.6, there isn't a httpcore-osgi.
