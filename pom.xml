@@ -57,7 +57,7 @@
     <ver.log4j2>2.13.1</ver.log4j2>
 
     <ver.jetty>9.4.26.v20200117</ver.jetty>
-    <ver.shiro>1.5.1</ver.shiro>
+    <ver.shiro>1.8.0</ver.shiro>
 
     <ver.libthrift>0.13.0</ver.libthrift>
 
